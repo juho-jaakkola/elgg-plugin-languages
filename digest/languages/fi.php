@@ -71,8 +71,8 @@ return array(
 	
 	// usersettings
 	'digest:usersettings:title' => "Uutiskirjeen asetukset",
-	'digest:usersettings:error:user' => "You don't have access to this users digest settings",
-	'digest:usersettings:no_settings' => "No digest settings available to configure.",
+	'digest:usersettings:error:user' => "Sinulla ei ole oikeuksia muuttaa tämän käyttäjän uutiskirjeen asetuksia",
+	'digest:usersettings:no_settings' => "Käytössä ei ole toimintoja, jotka sisältävät asetuksia.",
 	
 	'digest:usersettings:site:title' => "Uutiskirje",
 	'digest:usersettings:site:description' => "Sivustonlaajuinen uutiskirje kertoo sivuston viimeisimmistä tapahtumista kuten uusista blogeista, ryhmistä ja käyttäjistä.",
@@ -84,9 +84,9 @@ return array(
 	'digest:usersettings:groups:setting_header' => "Aikaväli",
 	
 	// group settings
-	'digest:groupsettings:title' => "Group digest setting",
-	'digest:groupsettings:description' => "At what interval do you which your members to receive a digest of the group activity. This setting will be used as a default value, your members can personaly overrule this setting.",
-	'digest:groupsettings:setting' => "Group digest interval",
+	'digest:groupsettings:title' => "Ryhmän uutiskirjeen asetukset",
+	'digest:groupsettings:description' => "Kuinka usein haluat ryhmän jäsenten saavan ryhmän toiminnasta kertovan uutiskirjeen? Tämä on oletusasetus, jonka jäsenet voivat halutessaan muuttaa henkilökohtaisista asetuksistaan.",
+	'digest:groupsettings:setting' => "Ryhmän uutiskirjeen lähetysväli",
 	
 	// layout
 	'digest:elements:unsubscribe:info' => "Sait tämän sähköpostin, koska olet tilannut uutiskirjeen sivustolta %s.",
@@ -94,40 +94,40 @@ return array(
 	'digest:elements:unsubscribe:unsubscribe' => "Voit perua uutiskirjeen kokonaan klikkaamalla %stästä%s.",
 
 	// show a digest online
-	'digest:show:error:input' => "Incorrect input to view the digest",
-	'digest:show:no_data' => "No data was found for the selected interval",
+	'digest:show:error:input' => "Virheelliset parametrit",
+	'digest:show:no_data' => "Aikaväliltä ei löytynyt dataa",
 
 	// message body
 	'digest:message:title:site' => "%s: %s lähetettävä uutiskirje",
-	'digest:message:title:group' => "%s - %s: %s digest",
+	'digest:message:title:group' => "%s - %s: %s lähetettävä uutiskirje",
 
-	'digest:elements:online' => "If you can't read the mail, view this digest %sonline%s",
+	'digest:elements:online' => "Jos et voi lukea tätä sähköpostia, voit lukea uutiskirjeen myös %sselaimessa%s",
 	
 	// admin stats
-	'digest:admin:stats:site:title' => "Site digest statistics",
-	'digest:admin:stats:site:not_enabled' => "Site digest is not enabled in the plugin settings",
-	'digest:admin:stats:general:server_name' => "Server that handled the digest",
-	'digest:admin:stats:general:ts_start_cron' => "Time the CRON started",
-	'digest:admin:stats:general:mts_start_digest' => "Time it took before the digest started",
-	'digest:admin:stats:general:peak_memory_start' => "Peak memory before the digest started",
-	'digest:admin:stats:general:peak_memory_end' => "Peak memory after the digest finished",
-	'digest:admin:stats:general:mts_end_digest' => "Time it took to process the digest",
+	'digest:admin:stats:site:title' => "Sivuston uutiskirjeen tilastot",
+	'digest:admin:stats:site:not_enabled' => "Sivuston uutiskirje ei ole käytössä",
+	'digest:admin:stats:general:server_name' => "Uutiskirjeen lähettänyt palvelin",
+	'digest:admin:stats:general:ts_start_cron' => "CRON-aloitusaika",
+	'digest:admin:stats:general:mts_start_digest' => "Uutiskirjeen valmisteluun käytetty aika",
+	'digest:admin:stats:general:peak_memory_start' => "Muistin käyttö ennen uutiskirjeen lähettämistä",
+	'digest:admin:stats:general:peak_memory_end' => "Muistin käyttö uutiskirjeen lähettämisen jälkeen",
+	'digest:admin:stats:general:mts_end_digest' => "Uutiskirjeen lähettämiseen kulunut aika",
 
-	'digest:admin:stats:site:general:mts_user_selection_done' => "Time it took to select all the users",
-	'digest:admin:stats:total_time' => "Total run time",
-	'digest:admin:stats:total_memory' => "Total memory leaked",
-	'digest:admin:stats:not_collected' => "No statistics have been collected yet",
+	'digest:admin:stats:site:general:mts_user_selection_done' => "Käyttäjien hakemiseen käytetty aika",
+	'digest:admin:stats:total_time' => "Kokonaisaika",
+	'digest:admin:stats:total_memory' => "Muistivuodon määrä",
+	'digest:admin:stats:not_collected' => "Tilastoja ei ole vielä kerätty",
 	
-	'digest:admin:stats:groups' => "Groups processed",
-	'digest:admin:stats:users' => "Users processed",
-	'digest:admin:stats:mails' => "Mails sent",
-	'digest:admin:stats:distribution:fortnightly' => "Odd weeks on %s",
-	'digest:admin:stats:distribution:monthly' => "%s of the month",
+	'digest:admin:stats:groups' => "Käsitellyt ryhmät",
+	'digest:admin:stats:users' => "Käsitellyt käyttäjät",
+	'digest:admin:stats:mails' => "Sähköpostien määrä",
+	'digest:admin:stats:distribution:fortnightly' => "Joka toisen viikon %s",
+	'digest:admin:stats:distribution:monthly' => "Kuun %s. päivä",
 	
-	'digest:admin:stats:group:title' => "Group digest statistics",
-	'digest:admin:stats:group:not_enabled' => "Group digest is not enabled in the plugin settings",
-	'digest:admin:stats:group:general:mts_group_selection_done' => "Time it took to select all groups",
-	'digest:admin:stats:group:general:total_time_user_selection' => "Total time spend on user selection",
+	'digest:admin:stats:group:title' => "Ryhmien uutiskirjeen tilatot",
+	'digest:admin:stats:group:not_enabled' => "Ryhmien uutiskirje ei ole käytössä",
+	'digest:admin:stats:group:general:mts_group_selection_done' => "Ryhmien hakemiseen käytetty aika",
+	'digest:admin:stats:group:general:total_time_user_selection' => "Käyttäjien hakemiseen käytetty kokonaisaika",
 	
 	// register 
 	'digest:register:enable' => "Haluan vastaanottaa sivuston uutiskirjeen",
@@ -148,14 +148,13 @@ return array(
 	'digest:action:update:groupsettings:success' => "Ryhmän uutiskirjeen asetukset tallennettu",
 	
 	// reset stats
-	'digest:action:reset_stats:success' => "The stats have been reset",
+	'digest:action:reset_stats:success' => "Tilastot nollattu",
 	
 	// send digest mail
-	'digest:mail:plaintext:description' => "Your e-mail client needs to support HTML mails to view the digest.
+	'digest:mail:plaintext:description' => "Sähköpostiohjelmasi pitää tukea HTML-sisältöä lukeaksesi uutiskirjeen.
 
-You can also view the digest online using the following link: %s.",
+Voit lukea uutiskirjeen myös selaimella osoitteessa: %s.",
 
 	// command line script
-	'digest:cli:error:secret' => "The provided secret is invalid, the digest can't run",
-	
+	'digest:cli:error:secret' => "Koodi on virheellinen, joten uutiskirjettä ei voida lähettää",
 );
