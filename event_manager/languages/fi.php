@@ -36,7 +36,7 @@
 		'event_manager:list:showmorevents' => 'Näytä lisää',
 		'event_manager:list:includepastevents' => 'Näytä menneet tapahtumat',
 		'event_manager:list:meattending' => 'Näytä tapahtumat, joihin osallistun',
-		'event_manager:list:owning' => 'Näytä luomani tapahtumat',
+		'event_manager:list:owning' => 'Näytä omat tapahtumani',
 		'event_manager:list:friendsattending' => 'Näytä tapahtumat, joihin ystäväni osallistuvat',
 
 		'event_manager:list:navigation:list' => 'Lista',
@@ -63,7 +63,7 @@
 		'event_manager:edit:form:file' => 'Valitse tiedosto',
 		'event_manager:edit:form:files' => 'Tiedostot',
 		'event_manager:edit:form:venue' => 'Tapahtumapaikka',
-		'event_manager:edit:form:type' => 'Type',
+		'event_manager:edit:form:type' => 'Tyyppi',
 		'event_manager:edit:form:location' => 'Sijainti',
 		'event_manager:event:edit:maps_address' => 'Osoite',
 		'event_manager:edit:form:region' => 'Alue',
@@ -82,7 +82,10 @@
 		'event_manager:edit:form:registration_ended' => 'Ota ilmoittautuminen pois käytöstä',
 		'event_manager:edit:form:registration_needed' => 'Osallistujien vaatii ilmoittautumisen',
 		'event_manager:edit:form:show_attendees' => 'Näytä osallistujat',
+		'event_manager:edit:form:hide_owner_block' => 'Hide owner information in sidebar',
 		'event_manager:edit:form:notify_onsignup' => 'Ilmoita, kun uusi käyttäjä ilmoittautuu',
+		'event_manager:edit:form:start' => 'Alkamisaika',
+		'event_manager:edit:form:end' => 'Päättymisaika',
 		'event_manager:edit:form:start_day' => 'Päivä',
 		'event_manager:edit:form:start_day:from' => 'Alkamispäivä',
 		'event_manager:edit:form:start_day:to' => 'Päättymispäivä',
@@ -98,8 +101,8 @@
 		'event_manager:edit:form:spots_left:waiting_list' => ' attendee(s) on the waiting list',
 		'event_manager:edit:form:currenticon' => 'Nykyinen kuva',
 		'event_manager:edit:form:icon' => 'Tapahtuman kuva',
-		'event_manager:edit:form:registration_completed' => 'Text when the event registration is completed',
-		'event_manager:edit:form:registration_completed:description' => 'If you add [NAME] the name of the registered user is displayed. If you add [EVENT] the name of the event is displayed.',
+		'event_manager:edit:form:registration_completed' => 'Teksti, joka näytetään, kun henkilö on ilmoittautunut tapahtumaan',
+		'event_manager:edit:form:registration_completed:description' => 'Lisää tekstiin [NAME] lisätäksesi ilmoittautuneen henkilön nimen, ja [EVENT] lisätäksesi tapahtuman nimen.',
 
 		'event_manager:edit:form:slot_set' => 'Set',
 		'event_manager:edit:form:slot_set:add' => 'Add set',
@@ -107,20 +110,20 @@
 		'event_manager:edit:form:slot_set:description' => 'Adding slots to sets will limit the user to only register for 1 slot per set',
 
 		'event_manager:form:program:day' => 'Add event day',
-		'event_manager:program:day:add' => 'Add day',
+		'event_manager:program:day:add' => 'Lisää päivä',
 		'event_manager:form:program:slot' => 'Add activity slot',
-		'event_manager:program:slot:add' => 'Add slot',
+		'event_manager:program:slot:add' => 'Lisää ajankohta',
 
-		'event_manager:editregistration:title' => 'Edit event registration form',
-		'event_manager:editregistration:addfield' => 'Add field',
-		'event_manager:editregistration:addfield:title' => 'Add registrationform field',
-		'event_manager:editregistration:fieldtype' => 'Field type',
-		'event_manager:editregistration:fieldoptions' => 'Field options',
-		'event_manager:editregistration:commasepetared' => 'comma separated',
-		'event_manager:editregistration:question' => 'Question',
+		'event_manager:editregistration:title' => 'Hallinnoi ilmoittautumislomakkeen kenttiä',
+		'event_manager:editregistration:addfield' => 'Lisää uusi kenttä',
+		'event_manager:editregistration:addfield:title' => 'Lisää uusi kenttä',
+		'event_manager:editregistration:fieldtype' => 'Kentän tyyppi',
+		'event_manager:editregistration:fieldoptions' => 'Vaihtoehdot',
+		'event_manager:editregistration:commasepetared' => 'erottele pilkulla',
+		'event_manager:editregistration:question' => 'Kysymys',
 
 		'event_manager:registration:message:registrationnotneeded' => 'Registration to this event is not needed.',
-		'event_manager:registration:register:title' => 'Register to event',
+		'event_manager:registration:register:title' => 'Ilmoittaudu tapahtumaan',
 		'event_manager:registration:registrationto' => 'Registration to ',
 		'event_manager:registration:edit:title' => 'Edit your registration',
 		'event_manager:registration:edityourregistration' => 'Edit your registration',
@@ -202,9 +205,9 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:event:deleteevent' => 'Poista',
 		'event_manager:event:uploadfiles' => 'Lisää tiedostoja',
 		'event_manager:event:attendees' => 'Osallistujat',
-		'event_manager:event:progam' => 'Ohjelma',
+		'event_manager:event:program' => 'Ohjelma',
 		'event_manager:event:editprogram' => 'Muokkaa ohjelmaa',
-		'event_manager:event:editquestions' => 'Edit registration questions',
+		'event_manager:event:editquestions' => 'Hallinnoi kysymyksiä',
 		'event_manager:event:viewwaitinglist' => 'View waiting list',
 		'event_manager:event:waitinglist:empty' => 'Waiting list is empty',
 		'event_manager:event:viewregistrations' => 'View registrations',
@@ -218,8 +221,8 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:event:createicon' => 'Create icon',
 		'event_manager:event:search_attendees' => 'Search attendees',
 
-		'event_manager:registrationform:editquestion:required' => 'Required?',
-		'event_manager:registrationform:fieldorder:error' => 'Error changing field order',
+		'event_manager:registrationform:editquestion:required' => 'Pakollinen',
+		'event_manager:registrationform:fieldorder:error' => 'Järjestyksen muuttaminen epäonnistui',
 
 		'event_manager:event:file:notfound:title' => 'File not found',
 		'event_manager:event:file:notfound:text' => 'The file you are looking for couldn\'t be found',
@@ -230,7 +233,7 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:event:menu:user_hover:resend_confirmation' => 'Resend confirmation email',
 		'event_manager:event:menu:user_hover:move_to_attendees' => 'Move to attendees',
 
-		'event_manager:event:menu:title:add_to_calendar' => 'Add to Calendar',
+		'event_manager:event:menu:title:add_to_calendar' => 'Lisää kalenteriin',
 
 		'event_manager:event:view:event' => 'Event',
 		'event_manager:event:view:date' => 'Date',
@@ -243,14 +246,20 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:error:max_attendees:not_numeric' => 'Value for \'Max Attendees\' must be a numeric value.',
 
 		// relationships
-		'event_manager:event:relationship:join' => 'Join event',
-		'event_manager:event:relationship:leave' => 'Leave event',
-		'event_manager:event:relationship:event_attending' => 'Osallistuu',
+		'event_manager:event:relationship:event_attending' => 'Osallistun',
+		'event_manager:event:relationship:event_attending:entity_menu' => '%s osallistujaa',
+		'event_manager:event:relationship:event_attending:label' => 'Osallistujat',
 		'event_manager:event:relationship:event_waitinglist' => 'Waiting list',
+		'event_manager:event:relationship:event_waitinglist:label' => 'On the waitinglist',
+		'event_manager:event:relationship:event_pending:label' => 'Pending email validation',
 		'event_manager:event:relationship:event_interested' => 'Kiinnostunut',
+		'event_manager:event:relationship:event_interested:label' => 'Kiinnostuneet',
 		'event_manager:event:relationship:event_presenting' => 'Esiintyjä',
+		'event_manager:event:relationship:event_presenting:label' => 'Esiintyjät',
 		'event_manager:event:relationship:event_exhibiting' => 'Esillepanija',
+		'event_manager:event:relationship:event_exhibiting:label' => 'Esillepanijat',
 		'event_manager:event:relationship:event_organizing' => 'Järjestäjä',
+		'event_manager:event:relationship:event_organizing:label' => 'Järjestäjät',
 		'event_manager:event:relationship:undo' => 'Peruuta',
 		'event_manager:event:relationship:kick' => 'Poista tapahtumasta',
 
@@ -260,7 +269,7 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:event:rsvp:nospotsleft' => 'This event has no spots left for it\'s activities.',
 		'event_manager:event:rsvp:waiting_list:message' => 'The event you want to attend to is full. Fill in the form below to get on the waiting list.',
 
-		'event_manager:event:relationship:message:event_attending' => 'You are now attending to this event',
+		'event_manager:event:relationship:message:event_attending' => 'Ilmoittautuminen tallennettu',
 		'event_manager:event:relationship:message:event_waitinglist' => 'You are now on the waiting list for this event',
 		'event_manager:event:relationship:message:event_interested' => 'You are now interested in this event',
 		'event_manager:event:relationship:message:event_presenting' => 'You are now presenting at this event',
@@ -271,7 +280,7 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 		'event_manager:event:relationship:message:unavailable_relation' => 'The RSVP type you selected is not available',
 
 		// widgets
-		'event_manager:widgets:events:title' => 'Event manager',
+		'event_manager:widgets:events:title' => 'Events',
 		'event_manager:widgets:events:description' => 'Show upcoming events',
 
 		'event_manager:widgets:events:numbertodisplay' => 'Näytettävien tapahtumien määrä',
@@ -281,7 +290,7 @@ Someone signed off from the '%s' event. You are moved from the waiting list to a
 
 		// actions
 		'event_manager:action:event:edit:ok' => 'Event saved',
-		'event_manager:action:event:edit:error_fields' => 'Fill in the required fields',
+		'event_manager:action:event:edit:error_fields' => 'Täytä pakolliset kentät',
 		'event_manager:action:registration:edit:error_fields_with_program' => 'Fill in the required fields and select at least 1 activity slot to attend to',
 		'event_manager:action:registration:edit:error_fields_program_only' => 'Select at least 1 activity slot to attend to',
 		'event_manager:action:registration:edit:error_slots' => 'You can only select one slot for each set. More than one are detected for the set %s.',
@@ -342,9 +351,9 @@ If you didn't request to unsubscribe from the event, please disregard this e-mai
 		'event_manager:action:unsubscribe_confirm:success' => "You have successfully been unsubscribed from the event",
 
 		// registration completed
-		'event_manager:registration:completed:title' => "Thank you for registering for %s",
+		'event_manager:registration:completed:title' => "Kiitos ilmoittautumisesta",
 		'event_manager:registration:completed' => "%s you have successfully completed the registration for %s. We hope you enjoy the event.",
-		'event_manager:registration:continue' => "Continue to the event",
+		'event_manager:registration:continue' => "Jatka tapahtumaan",
 
 		// registration confirm
 		'event_manager:registration:confirm:error:code' => "Invalid validation code, please check your e-mail for the correct code",
