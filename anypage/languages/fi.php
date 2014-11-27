@@ -6,6 +6,7 @@
 $finnish = array(
 	'admin:appearance:anypage' => 'Sivut',
 	'admin:appearance:anypage:new' => 'Uusi sivu',
+	'item:object:anypage' => 'Infosivut',
 
 	'anypage:warning' => 'Varoitus',
 	'anypage:unsupported_page_handler_character' => "Syötit virheellisen polun. Polun ensimmäinen osa (ennen toista / -merkkiä) voi sisältää vain kirjaimia a-z, numeroita sekä - ja _ -merkkejä.",
